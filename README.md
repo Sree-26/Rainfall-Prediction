@@ -1,72 +1,93 @@
-Rainfall Prediction Streamlit App 🌧️
+# Rainfall Prediction using Machine Learning
 
-This project takes a machine learning model trained to predict rainfall and deploys it as an interactive web application using Streamlit. The app allows users to input key weather parameters and receive a prediction on whether it is likely to rain.
+## Overview
 
-Project Overview
+This project predicts rainfall based on key weather parameters using Machine Learning. It started as a basic model in Google Colab and was later deployed as an interactive **Streamlit web application** for real-time predictions.
 
-The initial model was developed in a Jupyter Notebook using weather data from Rainfall.csv. This Streamlit application simplifies the user interface by focusing on the four most predictive features for rainfall in this dataset:
+## Features
 
-Sunshine: Duration of sunshine in hours.
+* Predict rainfall probability using weather inputs
+* Interactive user interface powered by Streamlit
+* Feature selection to identify top predictors
+* End-to-end workflow from data preprocessing to deployment
 
-Humidity: Relative humidity as a percentage.
+## Tech Stack
 
-Cloud Cover: Percentage of the sky covered by clouds.
+* **Python**
+* **Pandas**, **NumPy**, **Scikit-learn**
+* **Streamlit** for web app development
+* **Google Colab** for initial model training
 
-Pressure: Atmospheric pressure in hPa.
+## Dataset
 
-The application uses a pre-trained Support Vector Classifier (SVC) model from scikit-learn.
+The dataset includes weather parameters such as:
 
-Features
+* Sunshine (hours)
+* Humidity (%)
+* Cloud Cover (%)
+* Pressure (hPa)
 
-Interactive Interface: Allows users to input weather data via sliders.
+After feature selection, these four parameters were identified as the most influential in predicting rainfall.
 
-Real-time Prediction: Provides immediate rainfall prediction ("Likely to Rain" or "Not Likely to Rain").
+## Model Development
 
-Feature Selection: Uses only the 4 most impactful features for a simpler user experience.
+1. Data cleaning and preprocessing
+2. Feature selection and scaling
+3. Model training using machine learning algorithms
+4. Evaluation using performance metrics
+5. Deployment on Streamlit for interactive predictions
 
-Data Preprocessing: Includes data scaling (StandardScaler) and handling of class imbalance (RandomOverSampler) as performed in the original analysis.
+## Installation
 
-Caching: Uses Streamlit's caching (@st.cache_resource) to load and train the model only once, improving performance.
+To run this project locally:
 
-Setup and Usage
+```bash
+# Clone the repository
+git clone https://github.com/Sree-26/Rainfall-Prediction
+cd Rainfall-Prediction
 
-Follow these steps to run the application locally:
-
-Clone the Repository (or download the files):
-
-git clone <your-repository-link>
-cd <your-repository-directory>
-
-
-Create a Virtual Environment (Recommended):
-
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-
-Install Dependencies:
-Make sure you have the Rainfall.csv file in the same directory as the script. Then, install the required Python packages:
-
+# Install dependencies
 pip install -r requirements.txt
 
+# Run the app
+streamlit run rainfall_app.py
+```
 
-Run the Streamlit App:
+## Project Structure
 
-streamlit run rainfall_app_streamlit.py
+```
+Rainfall-Prediction/
+│
+├── rainfall_app.py                # Streamlit web app
+├── Rainfall_Prediction_ML.ipynb   # Model training notebook
+├── requirements.txt               # Required packages
+├── .devcontainer/                 # Dev container setup
+└── README.md                      # Project documentation
+```
 
+## Deployment
 
-Access the App:
-Streamlit will provide a local URL (usually http://localhost:8501) in your terminal. Open this URL in your web browser to interact with the rainfall prediction app.
+The app is deployed on Streamlit Cloud for easy access:
 
-File Structure
+* **Try it here:** [Rainfall Prediction App](https://rainfall-prediction-fspt2fdrxtadwq97ynaju6.streamlit.app/)
+* **Source Code:** [GitHub Repository](https://github.com/Sree-26/Rainfall-Prediction/tree/main)
 
-rainfall_app_streamlit.py: The main Python script for the Streamlit application.
+## Future Enhancements
 
-Rainfall.csv: The dataset used for training the model.
+* Add visualization for rainfall trends
+* Integrate weather API for live data input
+* Experiment with deep learning models for improved accuracy
 
-requirements.txt: Lists the necessary Python packages.
+## License
 
-README.md: This file, providing information about the project.
+This project is licensed under the **MIT License**.
+
+---
+
+**Author:** Sree | *Machine Learning Enthusiast*
+
+#MachineLearning #Streamlit #Python #AI #DataScience #AIML
+
 
 Model Details
 
