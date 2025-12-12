@@ -9,13 +9,6 @@
 
 ---
 
-## 🚀 Live Demo
-Check out the live application deployed on Streamlit Cloud:
-**[👉 Click Here to Try the Rainfall Prediction App](https://share.streamlit.io/your-username/rainfall-prediction/main/rainfall_app.py)**
-*(Note: Replace the link above with your actual Streamlit Cloud URL)*
-
----
-
 ## 📖 Overview
 This project leverages Machine Learning to predict whether it will rain tomorrow based on specific weather conditions today. It began as an exploratory data analysis and model training experiment in **Google Colab** and evolved into a production-ready web application using **Streamlit**.
 
