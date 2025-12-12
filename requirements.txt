@@ -1,4 +1,4 @@
 streamlit
 pandas
-scikit-learn
-imbalanced-learn
+scikit-learn==1.5.2
+imbalanced-learn>=0.12.0
