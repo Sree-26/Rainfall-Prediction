@@ -26,6 +26,8 @@ def get_model_and_scaler():
             val = df[col].mean()
             df[col] = df[col].fillna(val)
     df.replace({'yes': 1, 'no': 0}, inplace=True)
+    df.dropna(subset=['rainfall'], inplace=True)          # drop rows where rainfall is NaN
+    df['rainfall'] = df['rainfall'].astype(int)           # force to int so sklearn sees discrete classes
 
     # Feature Selection
     important_features = ['sunshine', 'humidity', 'cloud', 'pressure']
