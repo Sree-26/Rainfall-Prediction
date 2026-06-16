@@ -56,7 +56,7 @@ Rainfall-Prediction/
 
 The app is deployed on Streamlit Cloud for easy access:
 
-* **Try it here:** [Rainfall Prediction App](https://rainfall-prediction-fspt2fdrxtadwq97ynaju6.streamlit.app/)
+* **Try it here:** [Rainfall Prediction App]((https://rainfall-prediction-sree.streamlit.app/))
 * **Source Code:** [GitHub Repository](https://github.com/Sree-26/Rainfall-Prediction/tree/main)
 
 ## Future Enhancements
